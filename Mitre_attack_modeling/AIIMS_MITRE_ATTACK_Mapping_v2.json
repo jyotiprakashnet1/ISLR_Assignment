@@ -1,0 +1,179 @@
+{
+    "name": "AIIMS Data Breach (2022) - MITRE ATT&CK Mapping",
+    "version": "4.4",
+    "domain": "enterprise-attack",
+    "description": "Mapping of the AIIMS Ransomware Attack (2022) to the MITRE ATT&CK framework.",
+    "techniques": [
+        {
+            "techniqueID": "T1566",
+            "tactic": "initial-access",
+            "color": "#FF0000",
+            "comment": "Phishing emails targeting AIIMS staff."
+        },
+        {
+            "techniqueID": "T1190",
+            "tactic": "initial-access",
+            "color": "#FF0000",
+            "comment": "Exploited unpatched software vulnerabilities."
+        },
+        {
+            "techniqueID": "T1204",
+            "tactic": "execution",
+            "color": "#FF4500",
+            "comment": "User execution via malicious email attachments."
+        },
+        {
+            "techniqueID": "T1136",
+            "tactic": "persistence",
+            "color": "#FFA500",
+            "comment": "Created rogue administrator accounts for persistence."
+        },
+        {
+            "techniqueID": "T1547",
+            "tactic": "persistence",
+            "color": "#FFA500",
+            "comment": "Modified system startup for malware persistence."
+        },
+        {
+            "techniqueID": "T1078",
+            "tactic": "privilege-escalation",
+            "color": "#FFD700",
+            "comment": "Used stolen admin credentials to escalate privileges."
+        },
+        {
+            "techniqueID": "T1055",
+            "tactic": "privilege-escalation",
+            "color": "#FFD700",
+            "comment": "Injected malicious code into legitimate processes."
+        },
+        {
+            "techniqueID": "T1027",
+            "tactic": "defense-evasion",
+            "color": "#FFFF00",
+            "comment": "Obfuscated malicious files to evade detection."
+        },
+        {
+            "techniqueID": "T1562",
+            "tactic": "defense-evasion",
+            "color": "#FFFF00",
+            "comment": "Disabled security tools to prevent detection."
+        },
+        {
+            "techniqueID": "T1555",
+            "tactic": "credential-access",
+            "color": "#ADFF2F",
+            "comment": "Credential dumping to obtain passwords."
+        },
+        {
+            "techniqueID": "T1110",
+            "tactic": "credential-access",
+            "color": "#ADFF2F",
+            "comment": "Used brute force to crack weak passwords."
+        },
+        {
+            "techniqueID": "T1021",
+            "tactic": "lateral-movement",
+            "color": "#32CD32",
+            "comment": "Used remote services (RDP, SSH) for network access."
+        },
+        {
+            "techniqueID": "T1080",
+            "tactic": "lateral-movement",
+            "color": "#32CD32",
+            "comment": "Planted malware in shared folders for movement."
+        },
+        {
+            "techniqueID": "T1567",
+            "tactic": "exfiltration",
+            "color": "#008000",
+            "comment": "Exfiltrated patient data over external web services."
+        },
+        {
+            "techniqueID": "T1048",
+            "tactic": "exfiltration",
+            "color": "#008000",
+            "comment": "Used alternative protocols to hide data transfer."
+        },
+        {
+            "techniqueID": "T1486",
+            "tactic": "impact",
+            "color": "#0000FF",
+            "comment": "Deployed ransomware to encrypt AIIMS systems."
+        },
+        {
+            "techniqueID": "T1490",
+            "tactic": "impact",
+            "color": "#0000FF",
+            "comment": "Deleted system backups to prevent recovery."
+        },
+        {
+            "techniqueID": "T1598",
+            "tactic": "reconnaissance",
+            "color": "#800080",
+            "comment": "Phishing for Information - Attackers targeted AIIMS staff for credential harvesting."
+        },
+        {
+            "techniqueID": "T1595",
+            "tactic": "reconnaissance",
+            "color": "#800080",
+            "comment": "Active Scanning - Scanned AIIMS' public-facing apps for vulnerabilities."
+        },
+        {
+            "techniqueID": "T1592",
+            "tactic": "reconnaissance",
+            "color": "#800080",
+            "comment": "Gather Victim Host Information - Identified unpatched Windows servers."
+        },
+        {
+            "techniqueID": "T1584",
+            "tactic": "resource-development",
+            "color": "#FF69B4",
+            "comment": "Compromised third-party IT vendor to distribute malware."
+        },
+        {
+            "techniqueID": "T1587",
+            "tactic": "resource-development",
+            "color": "#FF69B4",
+            "comment": "Developed custom ransomware variant for the attack."
+        }
+    ],
+    "gradient": {
+        "colors": [
+            "#FF0000",
+            "#FFFF00",
+            "#00FF00"
+        ],
+        "minValue": 0,
+        "maxValue": 1
+    },
+    "legendItems": [
+        {
+            "label": "Initial Access",
+            "color": "#FF0000"
+        },
+        {
+            "label": "Privilege Escalation",
+            "color": "#FFD700"
+        },
+        {
+            "label": "Lateral Movement",
+            "color": "#32CD32"
+        },
+        {
+            "label": "Data Exfiltration",
+            "color": "#008000"
+        },
+        {
+            "label": "Impact",
+            "color": "#0000FF"
+        },
+        {
+            "label": "Reconnaissance",
+            "color": "#800080"
+        },
+        {
+            "label": "Resource Development",
+            "color": "#FF69B4"
+        }
+    ]
+}
